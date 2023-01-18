@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*디폴트값 30*/
+.hidden {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  vertical-align: top;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+body {
+  font-family: "Lato", "Pretendard";
+  font-size: 16px;
+  color: #111;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  transition: all 0.25s ease;
+  z-index: 99;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+.header:before {
+  content: "";
+  display: block;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: -1;
+}
+.header:after {
+  content: "";
+  display: block;
+  height: 400px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 80px;
+  z-index: -1;
+}
+.header.on {
+  height: 350px;
+}
+.header .logo a {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.header .logo a img {
+  height: 40px;
+}
+.header .gnb__list {
+  display: flex;
+  justify-content: center;
+}
+.header .gnb__list > li > a {
+  font-size: 18px;
+  font-weight: 700;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+.header .gnb__list--sub {
+  color: #fff;
+  padding: 30px 0;
+}
+.header .gnb__list--sub li a {
+  display: block;
+  padding: 5px 0 5px 40px;
+}
+.header .language {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  height: 80px;
+}
+.header .language span {
+  color: gray;
+  font-weight: 600;
+  margin-right: 30px;
+}/*# sourceMappingURL=layout.css.map */
